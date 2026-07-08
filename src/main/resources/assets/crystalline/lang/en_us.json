@@ -3,8 +3,15 @@
   "item.crystalline.flawless_ruby": "Flawless Ruby Gemstone",
   "item.crystalline.ruby": "Ruby Gemstone",
 
+  "block.crystalline.ruby_block": "Ruby Gemstone Block",
+  "block.crystalline.ruby_block_x2": "Ruby Gemstone Block X2",
+  "block.crystalline.ruby_block_x3": "Ruby Gemstone Block X3",
+  "block.crystalline.ruby_block_x4": "Ruby Gemstone Block X4",
+  "block.crystalline.ruby_block_x5": "Ruby Gemstone Block X5",
+  "block.crystalline.ruby_block_x6": "Ruby Gemstone Block X6",
 
 
 
-  "creativemodetab.crystalline_items_tab": "Crystalline Items"
+
+  "creativemodetab.crystalline_tab": "Crystalline Items"
 }

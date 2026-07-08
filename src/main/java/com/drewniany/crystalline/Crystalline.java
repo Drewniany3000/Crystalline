@@ -1,5 +1,6 @@
 package com.drewniany.crystalline;
 
+import com.drewniany.crystalline.blocks.CrystallineBlocks;
 import com.drewniany.crystalline.creativemodetab.CrystallineCreativeModeTabs;
 import com.drewniany.crystalline.item.CrystallineItems;
 import com.drewniany.crystalline.item.CrystallineItems;
@@ -33,6 +34,8 @@ public class Crystalline {
         modEventBus.addListener(this::commonSetup);
 
         CrystallineItems.register(modEventBus);
+
+        CrystallineBlocks.register(modEventBus);
 
         CrystallineCreativeModeTabs.register(modEventBus);
 
