@@ -1,5 +1,6 @@
 package com.drewniany.crystalline;
 
+import com.drewniany.crystalline.datagen.CrystallineBlockTagsProvider;
 import com.drewniany.crystalline.datagen.CrystallineModelProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -13,7 +14,9 @@ public class CrystallineDataGen {
     public static void gatherClientData(GatherDataEvent.Client event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
+        var lookupProvider = event.getLookupProvider();
 
         generator.addProvider(true, new CrystallineModelProvider(packOutput));
+        generator.addProvider(true, new CrystallineBlockTagsProvider(packOutput, lookupProvider));
     }
 }
