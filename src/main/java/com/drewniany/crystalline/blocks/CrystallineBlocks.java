@@ -3,8 +3,10 @@ package com.drewniany.crystalline.blocks;
 import com.drewniany.crystalline.Crystalline;
 import com.drewniany.crystalline.item.CrystallineItems;
 import com.mojang.brigadier.exceptions.Dynamic3CommandExceptionType;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -29,6 +31,8 @@ public class CrystallineBlocks {
             properties -> new Block(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.IRON)));
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block",
             properties -> new Block(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.IRON)));
+    public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(10, 15), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
 
 

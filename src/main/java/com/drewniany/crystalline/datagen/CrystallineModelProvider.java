@@ -21,6 +21,9 @@ public class CrystallineModelProvider extends ModelProvider {
         itemModels.generateFlatItem(CrystallineItems.PERFECT_RUBY.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(CrystallineItems.FLAWLESS_RUBY.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(CrystallineItems.RUBY.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(CrystallineItems.FINE_RUBY.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(CrystallineItems.FLAWED_RUBY.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(CrystallineItems.ROUGH_RUBY.get(), ModelTemplates.FLAT_ITEM);
 
 
 
@@ -34,6 +37,7 @@ public class CrystallineModelProvider extends ModelProvider {
         blockModels.createTrivialCube(CrystallineBlocks.RUBY_BLOCK_X4.get());
         blockModels.createTrivialCube(CrystallineBlocks.RUBY_BLOCK_X5.get());
         blockModels.createTrivialCube(CrystallineBlocks.RUBY_BLOCK_X6.get());
+        blockModels.createTrivialCube(CrystallineBlocks.RUBY_ORE.get());
 
 
     }

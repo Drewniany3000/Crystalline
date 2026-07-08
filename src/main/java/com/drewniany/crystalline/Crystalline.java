@@ -44,8 +44,6 @@ public class Crystalline {
         NeoForge.EVENT_BUS.register(this);
 
 
-        modEventBus.addListener(this::addCreative);
-
         modContainer.registerConfig(ModConfig.Type.COMMON, com.drewniany.crystalline.Config.SPEC);
     }
 
@@ -53,13 +51,6 @@ public class Crystalline {
 
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(CrystallineItems.PERFECT_RUBY);
-            event.accept(CrystallineItems.FLAWLESS_RUBY);
-            event.accept(CrystallineItems.RUBY);
-        }
-    }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {

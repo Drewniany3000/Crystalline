@@ -2,6 +2,9 @@
   "item.crystalline.perfect_ruby": "Perfect Ruby Gemstone",
   "item.crystalline.flawless_ruby": "Flawless Ruby Gemstone",
   "item.crystalline.ruby": "Ruby Gemstone",
+  "item.crystalline.fine_ruby": "Fine Ruby Gemstone",
+  "item.crystalline.flawed_ruby": "Flawed Ruby Gemstone",
+  "item.crystalline.rough_ruby": "Rough Ruby Gemstone",
 
   "block.crystalline.ruby_block": "Ruby Gemstone Block",
   "block.crystalline.ruby_block_x2": "Ruby Gemstone Block X2",
@@ -9,6 +12,7 @@
   "block.crystalline.ruby_block_x4": "Ruby Gemstone Block X4",
   "block.crystalline.ruby_block_x5": "Ruby Gemstone Block X5",
   "block.crystalline.ruby_block_x6": "Ruby Gemstone Block X6",
+  "block.crystalline.ruby_ore": "Ruby Gemstone Ore",
 
 
 

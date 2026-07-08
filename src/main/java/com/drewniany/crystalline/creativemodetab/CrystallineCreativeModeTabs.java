@@ -21,6 +21,9 @@ public class CrystallineCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(CrystallineItems.FLAWLESS_RUBY.get()))
                     .title(Component.translatable("creativemodetab.crystalline_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(CrystallineItems.ROUGH_RUBY);
+                        output.accept(CrystallineItems.FLAWED_RUBY);
+                        output.accept(CrystallineItems.FINE_RUBY);
                         output.accept(CrystallineItems.RUBY);
                         output.accept(CrystallineItems.FLAWLESS_RUBY);
                         output.accept(CrystallineItems.PERFECT_RUBY);
@@ -30,6 +33,7 @@ public class CrystallineCreativeModeTabs {
                         output.accept(CrystallineBlocks.RUBY_BLOCK_X4);
                         output.accept(CrystallineBlocks.RUBY_BLOCK_X5);
                         output.accept(CrystallineBlocks.RUBY_BLOCK_X6);
+                        output.accept(CrystallineBlocks.RUBY_ORE);
                     })
 
                     .build());
