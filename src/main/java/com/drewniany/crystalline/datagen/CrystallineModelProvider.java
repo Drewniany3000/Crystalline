@@ -24,6 +24,7 @@ public class CrystallineModelProvider extends ModelProvider {
         itemModels.generateFlatItem(CrystallineItems.FINE_RUBY.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(CrystallineItems.FLAWED_RUBY.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(CrystallineItems.ROUGH_RUBY.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(CrystallineItems.GEMSTONE_DRILL.get(), ModelTemplates.FLAT_ITEM);
 
 
 

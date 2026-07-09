@@ -27,6 +27,7 @@ public class CrystallineCreativeModeTabs {
                         output.accept(CrystallineItems.RUBY);
                         output.accept(CrystallineItems.FLAWLESS_RUBY);
                         output.accept(CrystallineItems.PERFECT_RUBY);
+                        output.accept(CrystallineItems.GEMSTONE_DRILL);
                         output.accept(CrystallineBlocks.RUBY_BLOCK);
                         output.accept(CrystallineBlocks.RUBY_BLOCK_X2);
                         output.accept(CrystallineBlocks.RUBY_BLOCK_X3);
