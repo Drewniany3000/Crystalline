@@ -35,7 +35,13 @@ public class CrystallineBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(CrystallineBlocks.RUBY_BLOCK_X4.get());
         dropSelf(CrystallineBlocks.RUBY_BLOCK_X5.get());
         dropSelf(CrystallineBlocks.RUBY_BLOCK_X6.get());
+
+        add(CrystallineBlocks.RUBY_ORE.get(), createMultipleOreDrops(CrystallineBlocks.RUBY_ORE.get(), CrystallineItems.FLAWED_RUBY.get(), 0, 2));
     }
+
+
+
+
     protected LootTable.Builder createMultipleOreDrops(Block block, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> enchantments = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(
@@ -46,7 +52,7 @@ public class CrystallineBlockLootTableProvider extends BlockLootSubProvider {
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
                                 .apply(ApplyBonusCount.addOreBonusCount(enchantments.getOrThrow(Enchantments.FORTUNE)))
                 )
-        )
+        );
     }
 
     @Override

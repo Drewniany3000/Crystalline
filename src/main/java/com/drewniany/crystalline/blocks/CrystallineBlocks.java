@@ -32,7 +32,7 @@ public class CrystallineBlocks {
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block",
             properties -> new Block(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.IRON)));
     public static final DeferredBlock<Block> RUBY_ORE = registerBlock("ruby_ore",
-            properties -> new DropExperienceBlock(UniformInt.of(10, 15), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+            properties -> new DropExperienceBlock(UniformInt.of(60, 100), properties.strength(8f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
 
 

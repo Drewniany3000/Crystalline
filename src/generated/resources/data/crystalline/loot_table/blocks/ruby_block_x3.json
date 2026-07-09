@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "crystalline:ruby_block_x3"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "crystalline:blocks/ruby_block_x3"
+}
