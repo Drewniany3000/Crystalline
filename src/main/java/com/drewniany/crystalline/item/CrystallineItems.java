@@ -22,6 +22,8 @@ public class CrystallineItems {
     public static final DeferredItem<GemstoneDrill> GEMSTONE_DRILL = ITEMS.registerItem("gemstone_drill",
             properties -> new GemstoneDrill(properties.pickaxe(GemstoneDrill.GEMSTONE, 1f, -2.8f)));
 
+    public static final DeferredItem<Item> COMPACTOR = ITEMS.registerSimpleItem("compactor");
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
