@@ -52,5 +52,31 @@ public class CrystallineRecipeProvider extends RecipeProvider {
                 .save(output);
 
 
+        shaped(RecipeCategory.BUILDING_BLOCKS, CrystallineBlocks.RUBY_BLOCK_X2.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', CrystallineItems.FLAWED_RUBY.get())
+                .unlockedBy(getHasName(CrystallineItems.FLAWED_RUBY.get()), has(CrystallineItems.FLAWED_RUBY.get()))
+                .group("Ruby Recipes")
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, CrystallineItems.FLAWED_RUBY.get(), 9)
+                .requires(CrystallineBlocks.RUBY_BLOCK_X2)
+                .unlockedBy(getHasName(CrystallineBlocks.RUBY_BLOCK_X2.get()), has(CrystallineItems.FLAWED_RUBY.get()))
+                .group("Ruby Recipes")
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, CrystallineBlocks.RUBY_BLOCK_X2.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', CrystallineBlocks.RUBY_BLOCK.get())
+                .unlockedBy(getHasName(CrystallineBlocks.RUBY_BLOCK.get()), has(CrystallineBlocks.RUBY_BLOCK.get()))
+                .group("Ruby Recipes")
+                .save(output, "crystalline:x_to_x2");
+
+
+
     }
 }

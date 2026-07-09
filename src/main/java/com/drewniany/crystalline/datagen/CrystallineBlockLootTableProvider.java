@@ -36,7 +36,7 @@ public class CrystallineBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(CrystallineBlocks.RUBY_BLOCK_X5.get());
         dropSelf(CrystallineBlocks.RUBY_BLOCK_X6.get());
 
-        add(CrystallineBlocks.RUBY_ORE.get(), createMultipleOreDrops(CrystallineBlocks.RUBY_ORE.get(), CrystallineItems.FLAWED_RUBY.get(), 0, 2));
+        add(CrystallineBlocks.RUBY_ORE.get(), createMultipleOreDrops(CrystallineBlocks.RUBY_ORE.get(), CrystallineItems.ROUGH_RUBY.get(), 1, 30));
     }
 
 
