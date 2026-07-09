@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "Ruby Recipes",
+  "ingredients": [
+    "crystalline:ruby_block_x3"
+  ],
+  "result": {
+    "count": 9,
+    "id": "crystalline:fine_ruby"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fine_ruby": {
+      "conditions": {
+        "items": [
+          {
+            "items": "crystalline:fine_ruby"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "crystalline:ruby_block_x3"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fine_ruby"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "crystalline:ruby_block_x3"
+    ]
+  }
+}

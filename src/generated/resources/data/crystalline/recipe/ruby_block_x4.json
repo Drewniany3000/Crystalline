@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "Ruby Recipes",
+  "key": {
+    "A": "crystalline:ruby"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "crystalline:ruby_block_x4"
+  }
+}
